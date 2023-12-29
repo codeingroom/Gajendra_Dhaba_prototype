@@ -1,0 +1,209 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Management System</title>
+</head>
+<body>
+<style>
+*{
+margin:0px;
+}
+.Student_main_box{
+background-color: #e0dede;
+   
+    width: auto;
+    height: 100%;
+}
+.left_menu{
+background-color: #000;
+    height: 21rem;
+    box-sizing: border-box;
+   
+}
+.list{
+background-color: #0eabd8;
+    margin:0rem 30px 2rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+	}
+.list:hover{
+background-color:#aaa;
+}	
+	
+	
+.lf{
+text-decoration: none;
+    color: #fff;
+    
+    font-family: cursive;
+    text-shadow: 1px 2px 3px #000;
+}
+.as{
+}
+.uls{
+font-size: larger;
+}
+.data_show{
+
+   
+}
+.lst_dt{
+}
+tr{
+}
+th{
+    background-color: #c1bfbf;
+    font-size: larger;
+    font-family: system-ui;
+}
+td{
+    background-color: white;
+    box-shadow:  1px 3px 8px #000;
+    border: 0px;
+   /* border-radius: 1rem;*/
+}
+.due{
+ background-color: red;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: monospace;
+}
+.status{
+    background-color: #0efc0e;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: monospace;
+	
+}
+.end{
+}
+.profile{
+    width: 10rem;
+}
+.btns{
+
+    background-color: #0efc0e;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px #000;
+	cursor:pointer;
+}
+.btnss{
+ background-color: red;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px #000;
+	cursor:pointer;
+	    margin-left: 1rem;
+    color: #fff;
+}
+.btnss:hover{
+background-color:#aaa;
+}
+.btns:hover{
+background-color:#aaa;
+}
+.ends{
+background-color:red;
+}
+@media (max-width: 768px) {
+  .list {
+    padding: 0.3rem;
+    font-size: smaller;
+  }
+}
+</style>
+<div class="Student_main_box">
+<div class="left_menu">
+<ul class="uls">
+<li class="list"><a href="#" class="lf">Home</a></li>
+      <li class="list"><a href="#" class="lf">ADD New Student</a></li>
+      <li class="list"><a href="#" class="lf">Hostel</a></li>
+      <li class="list"><a href="#" class="lf">Settings</a></li>
+      <li class="list"><a href="#" class="lf">Due</a></li>
+      <li class="list"><a href="#" class="lf">LogOut</a></li>
+    </ul>
+</div>
+
+<div class="data_show">
+<div class="lst_dt">
+<h1>Hostel Student Information</h1>
+  <table>
+    <tr>
+      <th>Photo</th>
+      <th>Name</th>
+      <th>Phone Number</th>
+      <th>Join Date</th>
+      <th>End Date</th>
+      <th>Status</th>
+      <th>Payment</th>
+      <th>Branch</th>
+      <th>Print Payment</th> <!-- New header for the button -->
+      <th>Address</th>
+      <th>Student father Number</th>
+      <th>Room Number</th>
+	  <!-- New header for the button -->
+    </tr>
+    <tr>
+      <td><img src="user.png" class="profile" alt="Student Photo"></td>
+      <td>John Doe</td>
+      <td>123-456-7890</td>
+      <td>2023-01-15</td>
+      <td class="end">Active</td>
+      <td class="Status">Success<br><button class="btns">S</button><button class="btnss">D</button></td>
+      <td>No Payment</td>
+      <td>Computer Science</td>
+      <td><button class="printButton">Print Payment</button></td> <!-- Print button for student 1 -->
+      <td>this section is Address</td> 
+	  <td>father number</td>
+	  <td>234</td>
+	  <!-- Print button for student 1 -->
+    </tr>
+    <tr>
+      <td><img src="user.png" class="profile" alt="Student Photo"></td>
+      <td>Jane Smith</td>
+      <td>987-654-3210</td>
+      <td>2023-02-20</td>
+      <td class="end">Active</td>
+      <td class="due">Due<br><button class="btns">S</button><button class="btnss">D</button></td>
+      <td>₹3000</td>
+      <td>Electrical Engineering</td>
+      <td><button class="printButton">Print Payment</button></td> <!-- Print button for student 2 -->
+	  <td>this section is Address</td>
+	  <td>father number</td>
+	  <td>189</td>
+    </tr>
+    
+	
+	<tr>
+      <td><img src="user.png" class="profile" alt="Student Photo"></td>
+      <td>rahul Smith</td>
+      <td>987-654-3210</td>
+      <td>2023-02-20</td>
+      <td class="ends">Inactive<br><span>2023-05-25</span></td>
+      <td class="status">Success<br><button class="btns">S</button><button class="btnss">D</button></td>
+      <td>No Payment</td>
+      <td>Electrical Engineering</td>
+      <td><button class="printButton">Print Payment</button></td> <!-- Print button for student 2 -->
+	  <td>this section is Address</td>
+	  <td>father number</td>
+    <td>195</td>
+    
+	</tr>
+	
+  </table>
+
+</div>
+</div>
+
+
+</div>
+
+</body>
+</html>
+
+
+

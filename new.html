@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #0efc0e;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0aae0a;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+}
+.left_box{
+    width: 12rem;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.list{
+background-color: #0eabd8;
+    margin: 2rem 0px 2rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+	cursor:pointer;
+}
+.list:hover{
+background-color:#aaa;
+}	
+	
+	
+.lf{
+text-decoration: none;
+    color: #fff;
+    font-size: larger;
+    font-family: cursive;
+    text-shadow: 1px 2px 3px #000;
+}
+
+.uls{
+
+}
+.ls{
+}
+
+</style>
+</head>
+<body>
+<div class="left_box">
+<ul class="uls">
+<li class="list"><a href="#" class="lf">Home</a></li>
+      <li class="list"><a href="#" class="lf">ADD New Student</a></li>
+      <li class="list"><a href="#" class="lf">Hostel</a></li>
+      <li class="list"><a href="#" class="lf">Settings</a></li>
+      <li class="list"><a href="#" class="lf">Due</a></li>
+      <li class="list"><a href="#" class="lf">LogOut</a></li>
+    </ul>
+
+</div>
+<div class="container">
+  <h1>Student Registration Form</h1>
+  <form>
+    <div class="form-group">
+      <label for="photo">Choose Photo of Student</label>
+      <input type="file" id="photo" name="photo" accept="image/*">
+    </div>
+    <div class="form-group">
+      <label for="name">Enter Student Name</label>
+      <input type="text" id="name" name="name" placeholder="Bhanu Pratap Singh">
+    </div>
+    <div class="form-group">
+      <label for="phone">Enter Student Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+9196XXXXX00">
+    </div>
+	<div class="form-group">
+      <label for="phone">Enter Student Father Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+9196XXXXX00">
+    </div>
+    <div class="form-group">
+      <label for="joinDate">Select Join Date</label>
+      <input type="date" id="joinDate" name="joinDate">
+    </div>
+    <div class="form-group">
+      <label for="branch">Enter Branch</label>
+      <input type="text" id="branch" name="branch" placeholder="Computer Science">
+    </div>
+    <div class="form-group">
+      <label for="branch">Enter Address</label>
+      <input type="text" id="branch" name="branch" placeholder="Address..">
+    </div>
+	
+	<div class="form-group">
+      <label for="option">Select Option</label>
+      <select id="option" name="option">
+        <option value="mesh">Only Mesh</option>
+        <option value="hostel">Only Hostel</option>
+        <option value="both">Both</option>
+      </select>
+    </div>
+	 <div class="form-group">
+      <label for="branch">Enter Room Number</label>
+      <input type="text" id="branch" name="branch" placeholder="Room No.430">
+    </div>
+     <div class="form-group">
+      <label for="branch">Enter Room Amount</label>
+      <input type="text" id="branch" name="branch" placeholder=" 2000">
+    </div>
+	
+	<div class="form-group">
+      <label for="branch">Enter Mesh Amount</label>
+      <input type="text" id="branch" name="branch" placeholder=" 3000">
+    </div>
+	
+	<button type="submit" class="submit-button">Submit</button>
+  </form>
+</div>
+</body>
+</html>
